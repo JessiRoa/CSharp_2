@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MultiplierLib
 {
-    class FileConverter
+    public class FileConverter
     {
         public string Transform(string row)
         {

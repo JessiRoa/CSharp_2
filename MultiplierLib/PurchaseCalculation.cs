@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MultiplierLib
 {
-    class PurchaseCalculation
+    public class PurchaseCalculation
     {
         public decimal Execute(int qty, decimal amount, bool withVat)
         {
