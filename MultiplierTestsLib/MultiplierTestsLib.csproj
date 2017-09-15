@@ -53,6 +53,7 @@
     <Compile Include="FileConversionTests.cs" />
     <Compile Include="PurchaseCalculationTests.cs" />
     <Compile Include="ListHandlerTests.cs" />
+    <Compile Include="DateHandlerTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
