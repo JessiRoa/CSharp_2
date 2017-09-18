@@ -8,27 +8,29 @@ namespace StorytellerLib
 {
     public class Storyteller
     {
-        private string myStory;
+        //public string myStory;
 
         public string TellStory(string nameOfChild, int ageOfChild, bool willBeScary)
         {
             if (ageOfChild < 5 && willBeScary)
                 throw new InvalidOperationException();
+            string myStory = "";
                 if (ageOfChild < 7)
             {
-                string myStory = $"Lyssna nu { nameOfChild}. Det var en gång en prinsessa";
+                myStory += $"Lyssna nu { nameOfChild}. Det var en gång en prinsessa";
             }
-        else
-        myStory = $"Hallå {nameOfChild}! En gång fanns en kille ";
+             else
+                myStory += $"Hallå {nameOfChild}! En gång fanns en kille ";
              
             string scary = "";
-            if (willBeScary == true)
+            if (!willBeScary)
             {
-                scary = $"som egentligen var en varulv.";
+                scary += "som tyckte om att dansa.";
             }
             else
-                scary = $"som tyckte om att dansa.";
-            
+                scary += "som egentligen var en varulv.";
+
+
             return myStory + scary;
         }
     }

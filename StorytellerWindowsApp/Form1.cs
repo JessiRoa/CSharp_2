@@ -20,12 +20,19 @@ namespace StorytellerWindowsApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Storyteller storyteller = new Storyteller();
-            textStory.Text = storyteller.TellStory(
-                numAgeOfChild.Text,
-                Convert.ToInt32(numAgeOfChild.Value),
-                checkBoxScary.Enabled);
-
+            try
+            {
+                Storyteller storyteller = new Storyteller();
+                textStory.Text = storyteller.TellStory(
+                    textBox1.Text,
+                    Convert.ToInt32(numAgeOfChild.Value),
+                    checkBoxScary.Checked
+                    );
+            }
+            catch (InvalidOperationException)
+            {
+                MessageBox.Show("Kan inte berätta storyn för dig");
+            }
         }
     }
 }
