@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiplierTestsLib", "Multi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiplierLib", "MultiplierLib\MultiplierLib.csproj", "{8E9E9069-D4E7-4743-A044-378B7A127DF8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoretellerTestsLib", "StoretellerTestsLib\StoretellerTestsLib.csproj", "{0AA3605F-99D2-494A-AEAB-6A0CF87AD3C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StorytellerLib", "StorytellerLib\StorytellerLib.csproj", "{ED86A891-3F0A-419E-B6B8-94784E5142FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{8E9E9069-D4E7-4743-A044-378B7A127DF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E9E9069-D4E7-4743-A044-378B7A127DF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E9E9069-D4E7-4743-A044-378B7A127DF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AA3605F-99D2-494A-AEAB-6A0CF87AD3C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AA3605F-99D2-494A-AEAB-6A0CF87AD3C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AA3605F-99D2-494A-AEAB-6A0CF87AD3C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AA3605F-99D2-494A-AEAB-6A0CF87AD3C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED86A891-3F0A-419E-B6B8-94784E5142FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED86A891-3F0A-419E-B6B8-94784E5142FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED86A891-3F0A-419E-B6B8-94784E5142FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED86A891-3F0A-419E-B6B8-94784E5142FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
