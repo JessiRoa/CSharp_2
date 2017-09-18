@@ -15,30 +15,30 @@ namespace StoretellerTestsLib
             // Arrange
             var sut = new Storyteller();
             // Act
-            var actual = sut.TellStory("Jessica", 27, false);
+            var actual = sut.TellStory("Alexander", 6, false);
             // Assert
-            Assert.AreEqual("Lyssna nu Jessica. Det var en gång en prinsessa " + "som tyckte om att dansa", actual);
+            Assert.AreEqual($"Lyssna nu Alexander. Det var en gång en prinsessa som tyckte om att dansa.", actual);
         }
         [TestMethod]
-        public void TellStoryToOldYoungJessicaNotScary()
+        public void TellStoryToOldNotScary()
         {
             // Arrange
             var sut = new Storyteller();
             // Act
-            string actual = sut.TellStory("Jessica", 27, true);
-            Assert.AreEqual($"Lyssna nu Jessica.  Det var en gång en prinsessa " + "som egentligen var en varulv", actual);
+            string actual = sut.TellStory("Alexander", 6, true);
+            Assert.AreEqual($"Lyssna nu Alexander. Det var en gång en prinsessa som egentligen var en varulv.", actual);
         }
         [TestMethod]
-        public void TellStoryToOldJohnnyNotScary()
+        public void TellStoryToOldScary()
         {
             // Arrange
             var sut = new Storyteller();
             // Act
-            string actual = sut.TellStory("Johhny", 32, false);
+            string actual = sut.TellStory("Johnny", 32, false);
             Assert.AreEqual($"Hallå Johnny! En gång fanns en kille som tyckte om att dansa.", actual);
         }
         [TestMethod]
-        public void TellStoryToOldJohnnyScary()
+        public void TellStoryTooJohnnyScary()
         {
             // Arrange
             var sut = new Storyteller();

@@ -24,10 +24,10 @@ namespace StorytellerLib
             string scary = "";
             if (willBeScary == true)
             {
-                scary = $"som egentligen var en varulv";
+                scary = $"som egentligen var en varulv.";
             }
             else
-                scary = $"som tyckte om att dansa";
+                scary = $"som tyckte om att dansa.";
             
             return myStory + scary;
         }
