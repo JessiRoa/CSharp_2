@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ExamLib
+{
+    public class Exam
+    {
+      private string kursNamn;
+      private Dictionary<Student, string> StudentBetygDictionary = new Dictionary<Student, string>();
+
+        public Exam(string kursNamn)
+        {
+            this.kursNamn = kursNamn;
+        }
+
+        public void Assign(Student student)
+        {
+            StudentBetygDictionary.Add(student, "");
+        }
+
+        public void Grade(Student studenter, string betyg)
+        {
+            if (!StudentBetygDictionary.ContainsKey(studenter))
+            StudentBetygDictionary[studenter] = betyg;
+        }
+
+        public Dictionary<string, int> GenerateStatistics()
+        {
+            var betygDiccionary = new Dictionary<string, int>(); /*Nytt diccionary*/
+            betygDiccionary.Add("IG", 0);
+            betygDiccionary.Add("G", 0);
+            betygDiccionary.Add("VG", 0);
+           
+            foreach (var StudenBetygtEntry in StudentBetygDictionary) /*studenBetygtEntry:Key och StudentBetygDictionary:Value */
+            {
+                betygDiccionary[StudenBetygtEntry.Value]++;
+            }
+            return betygDiccionary;
+        }
+    }
+}
