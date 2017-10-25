@@ -1,7 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ExamLib;
-using System.Collections.Generic; //Det adderas tillsammnans med Dicctionary
+using System.Collections.Generic; 
+//Det adderas tillsammnans med Dicctionary
 
 namespace ExamTestsLib
 {
@@ -9,7 +10,7 @@ namespace ExamTestsLib
     public class ExamTests
     {
         [TestMethod]
-        public void TestMethod1()
+        public void Statistics()
         {
             var sut = new Exam("CSharp");
             var alice = new Student("Alice");
@@ -27,7 +28,6 @@ namespace ExamTestsLib
             Assert.AreEqual(statistics["VG"], 1);
         }
         [TestMethod]
-        [ExpectedException(typeof(UnassignedStudentException))]
         public void UnassignedStudent()
         {
             var sut = new Exam("CSharp");

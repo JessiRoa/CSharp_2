@@ -9,8 +9,8 @@ namespace ExamLib
     public class Exam
     {
         private string courseName;
-        private Dictionary<Student, string> studentGradeDictionary =
-            new Dictionary<Student, string>();
+        private Dictionary<Student, string> studentGradeDictionary = new Dictionary<Student, string>();
+
         public Exam(string courseName)
         {
             this.courseName = courseName;
@@ -24,7 +24,6 @@ namespace ExamLib
         public void Grade(Student student, string grade)
         {
             if (!studentGradeDictionary.ContainsKey(student))
-                //throw new UnassignedStudentException();
             studentGradeDictionary[student] = grade;
         }
 
